@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Header from '../components/Header';
 import Main from '../components/Main';
@@ -33,13 +35,6 @@ export default function FlashCardsPage() {
   const [radioButtonShowTitle, setRadioButtonShowTitle] = useState(true);
 
   useEffect(() => {
-    //Promise:
-    // getAllFlashCards().then(allFlashCards => {
-    //   setAllCards(allFlashCards);
-    // });
-
-    //IIFE
-
     (async function getAllCards() {
       try {
         const backEndAllCards = await getAllFlashCards();
@@ -94,6 +89,7 @@ export default function FlashCardsPage() {
       setAllCards(allCards.filter(card => card.id !== cardId));
 
       setError('');
+      toast('Card successfully deleted!');
     } catch (error) {
       setError(error.message);
     }
@@ -122,6 +118,7 @@ export default function FlashCardsPage() {
 
         //Frontend
         setAllCards([...allCards, newFlashCard]);
+        toast(`Card "${title}" successfully created!`);
       } catch (error) {
         setError(error.message);
       }
@@ -142,6 +139,7 @@ export default function FlashCardsPage() {
         setSelectedFlashCard(null);
         setCreateMode(true);
         setError('');
+        toast(`Card "${title}" successfully updated!`);
       } catch (error) {
         setError(error.message);
       }
@@ -235,6 +233,7 @@ export default function FlashCardsPage() {
 
   return (
     <>
+      <ToastContainer position="top-right" />
       <Header>Flash Cards App</Header>
       <Main>{mainJsx}</Main>
     </>
