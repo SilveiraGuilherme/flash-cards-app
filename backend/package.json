@@ -1,0 +1,15 @@
+{
+  "name": "backend-aula",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "json-server": "0.16.3"
+  },
+  "dependencies": {
+    "uuid": "8.3.2"
+  },
+  "scripts": {
+    "server": "json-server --watch flashcards.json --port 3001"
+  }
+}
