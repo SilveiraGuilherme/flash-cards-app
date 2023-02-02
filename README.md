@@ -96,7 +96,7 @@ The application only works locally on previous Node versions. This one was made 
    ```
 3. Run the backend inside the folder 'backend'
    ```sh
-   yarn dev
+   yarn server
    ```
 4. Run the project locally
    ```sh
