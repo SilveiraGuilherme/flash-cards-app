@@ -24,8 +24,6 @@
     <a href="https://flash-cards-jsguilherme.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/SilveiraGuilherme/flash-cards-app/issues/new">Report Bug</a>
-    ·
-    <a href="https://www.buymeacoffee.com/">Support</a>
   </p>
 </div>
 
@@ -61,11 +59,11 @@
 
 ## About The Project
 
-[![Alt text](website-photo-pathway)](website-link)
+[![Alt text](./public/img/flash-cards-website.png)](https://flash-cards-jsguilherme.netlify.app/)
 
 <!-- WEBSITE DESCRIPTION -->
 
-Investapp is a client-side web application that allows users simulate trading stocks with a starting balance.
+Flash Cards App is a web application that allows users to add, edit and remove flash cards containing information.
 
 ### Built With
 
