@@ -41,6 +41,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
+        <li><a href="#requirements">Requirements</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -63,13 +64,14 @@
 
 <!-- WEBSITE DESCRIPTION -->
 
-Flash Cards App is a web application that allows users to add, edit and remove flash cards containing information.
+Flash Cards App is a web application that allows users to add, edit and remove flash cards containing information of their preference. It can be very usefull for studying purposes.
 
 ### Built With
 
 - <strong>React</strong> for UI building.
-- <strong>Plotly.js</strong> for data visualization.
-- <strong>Chackra UI</strong> for UI styling.
+- <strong>Axios</strong> for HTTP requests.
+- <strong>Node.js</strong> for server-side programming.
+- <strong>Tailwind</strong> for UI styling.
 - <strong>JavaScript, HTML, CSS</strong> as a general stack to build web applications.
 
 <!-- GETTING STARTED -->
@@ -78,35 +80,36 @@ Flash Cards App is a web application that allows users to add, edit and remove f
 
 To get and run a local copy of this project follow the instructions below.
 
+### Requirements
+
+The application only works locally on previous Node versions. This one was made on v16.11.0.
+
 ### Installation
 
 1. Clone the repo
    ```sh
    git clone https://github.com/SilveiraGuilherme/flash-cards-app.git
    ```
-2. Install NPM packages
+2. Install packages
    ```sh
-   npm install
+   yarn
    ```
-3. Run the project locally
+3. Run the backend inside the folder 'backend'
    ```sh
-   npm start
+   yarn dev
+   ```
+4. Run the project locally
+   ```sh
+   yarn dev
    ```
 
 <!-- ROADMAP -->
 
 ## Roadmap
 
-- [x] Layout component.
-- [x] Welcome component to set name and initial deposit.
-- [x] Stock section to show trending stocks
-- [x] Investments section to diplay a list of transactions.
-- [x] Wallet section to manage deposits and transfers.
-- [x] News section to display top and breaking news.
-- [x] Overview section containing a selection of components.
-- [x] Search functionality for stocks.
-- [x] Watchlist component.
-- [ ] Component to show investment performance.
+- [x] Listing component to show all the existing flash cards with titles and descriptions.
+- [x] Registration component to add and edit flash cards.
+- [x] Studying component to shuffle and flip the flash cards, showing title or description.
 
 See the [open issues](https://github.com/SilveiraGuilherme/flash-cards-app/issues) for a full list of proposed features (and known issues).
 
@@ -143,7 +146,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Links
 
 - GitHub repository: [https://github.com/SilveiraGuilherme/flash-cards-app](https://github.com/SilveiraGuilherme/flash-cards-app)
-- Demo: [website-link](website-link)
+- Demo: [flash-cards-app](https://flash-cards-jsguilherme.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
