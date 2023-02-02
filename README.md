@@ -146,7 +146,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Links
 
 - GitHub repository: [https://github.com/SilveiraGuilherme/flash-cards-app](https://github.com/SilveiraGuilherme/flash-cards-app)
-- Demo: [flash-cards-app](https://flash-cards-jsguilherme.netlify.app/)
+- Website: [flash-cards-app](https://flash-cards-jsguilherme.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
