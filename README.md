@@ -64,7 +64,7 @@
 
 <!-- WEBSITE DESCRIPTION -->
 
-Flash Cards App is a web application that allows users to add, edit and remove flash cards containing information of their preference. It can be very usefull for studying purposes.
+Flash Cards App is a web application that allows users to add, edit and remove flash cards containing information of their preference. It can be very useful for studying purposes.
 
 ### Built With
 
